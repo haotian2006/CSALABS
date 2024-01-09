@@ -11,4 +11,7 @@ If your java workspace is different then your Java version and it causes an erro
 3. Click on the 3 horizontal dots 
 4. Press Clean Workspace
 
-![cleanWorkspace.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/Tips/CleanWorkspace.png?raw=true)
+![cleanWorkspace.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/tips/CleanWorkspace.png?raw=true)
+
+## AutoFill
+There are a few statements that java will auto fill for you for example typing just sys will show you options such as `sysout`,`syserr`, etc... Pressing on those are way faster then just typing `System.out.println()`
