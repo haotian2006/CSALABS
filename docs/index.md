@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Hello
+This will be a resource for any one that its In LHS's CSA program. I will try to cover the Second Semester only as this was an idea that I though of in the first semester. 
 
-## Commands
+## Disclaimer
+These docs will **not** provide the full code/solution of the labs but rather to help aid you with the labs. Also don't expect all labs to be documented here 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Keybinds
+![Keybinds.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
