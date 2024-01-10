@@ -7,6 +7,10 @@ What you can do first is click on the `Full Printable Report` Button
 
 ![Keybinds.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/index/PrintReportButton.png?raw=true)
 
+
+![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/index/ErrorsIdk.png?raw=true)
+
+
 ## Keybinds
 ![Keybinds.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/index/keyboard-shortcuts-macos.jpg?raw=true)
 
