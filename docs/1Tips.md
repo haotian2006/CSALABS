@@ -1,5 +1,12 @@
 # Some tips that may be helpful
 
+## Web Cat Style Checker (if enabled)
+webcat's style checking can be annoying so here are some tips on what you should do 
+
+What you can do first is click on the `Full Printable Report` Button
+
+![Keybinds.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/index/PrintReportButton.png?raw=true)
+
 ## Keybinds
 ![Keybinds.pdf](https://github.com/haotian2006/CSALABS/blob/main/Images/index/keyboard-shortcuts-macos.jpg?raw=true)
 

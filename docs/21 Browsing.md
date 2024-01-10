@@ -1,5 +1,8 @@
 # 21 Lab: Browsing
 
+>Difficulty: <span style="color:lightgreen">simple</span> (15 Minuets)
+
+
 ## Instructions 
 In this lab we will implement a toy browser called `LineCruiser`. Rather than
 browsing web pages, our browser will “browse” several lines of text in the same file.
@@ -60,4 +63,10 @@ for the stacks. Write the BrowserModel class and test the program thoroughly.
 
 ## Overview 
 This lab introduces you to Stacks which is a data structure that is LIFO (Last In First Out) 
-![Alt text](ttps://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/Stack.png?raw=true)
+
+![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/Stack.png?raw=true)
+
+This can be useful here as we just need the last Item added to the stack to keep track of the pages you went before
+
+!!!warning
+    This lab takes off points determining on your formatting. Make sure you have Java Doc comments and your style follows the web cat checker. 
