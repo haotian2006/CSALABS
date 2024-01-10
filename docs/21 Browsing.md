@@ -103,16 +103,16 @@ The current page you will be on
 ### BrowserModel(`BrowserView view`) : `constructor`
 Initialize all the fields 
 
-### Home : `void`
+### Home() : `void`
 Clears the stacks and goes to the home page (0)
 
-### back : `void`
+### back() : `void`
 Updates `view` to the previous line from the back stack 
 !!!info
     remember to update `forwardStk` and `topLine`.
     Also remember to check if `backStk` is empty
 
-### forward : `void`
+### forward() : `void`
 Similar to `back()` but moves forward instead.
 
 ### followLink(`int n`) : `void`
@@ -124,10 +124,10 @@ Is called when the Blue text is clicked.
 !!!info
     remember to store the current line in `backStk` and update `view`
 
-### hasBack: `boolean`
+### hasBack() : `boolean`
 if there is values in `backStk`
 
-### hasForward: `boolean`
+### hasForward() : `boolean`
 if there is values in `forwardStk`
 
 
