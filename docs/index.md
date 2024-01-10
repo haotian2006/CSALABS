@@ -1,7 +1,7 @@
 # Home
 
 ## Hello
-This will be a resource for any one that its In LHS's CSA program. I will try to cover the Second Semester only as this was an idea that I though of in the first semester. 
+This will be a resource for any one that is in LHS's CSA program. I will try to cover the Second Semester only as this was an idea that I though of in the first semester. 
 
 [Raw MD files](https://github.com/haotian2006/CSALABS/tree/main/docs)
 
