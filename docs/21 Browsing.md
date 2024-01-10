@@ -111,8 +111,20 @@ Updates `view` to the previous line from the back stack
 Similar to `back()` but moves forward instead.
 
 ### followLink(`int n`) : `void`
+Is called when the Blue text is clicked.
 
 ![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/link.png?raw=true)
+
+`n` will be the blue line that is clicked and you will make it go to n-th line.
+!!!info
+    remember to store the current line in backStk
+
+### hasBack: `boolean`
+if there is values in `backStk`
+
+### hasForward: `boolean`
+if there is values in `forwardStk`
+
 
 
 
