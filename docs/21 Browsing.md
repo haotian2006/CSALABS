@@ -1,11 +1,12 @@
 # 21 Lab: Browsing
 
 >Difficulty: <span style="color:lightgreen">simple</span> (15 Minuets)
+
+
 !!!warning
-    This lab takes off points determining on your formatting. Make sure you have Java Doc comments and make sure your style follows what webcat wants.
-    You can find out how to style properly [here](https://haotian2006.github.io/CSALABS/1Tips/#web-cat-style-checker-if-enabled)
+    This lab deducts points based on formatting criteria. Ensure that your code includes JavaDoc comments and adheres to the formatting guidelines specified by Web-CAT. For detailed instructions on proper styling, refer to [ this resource](https://haotian2006.github.io/CSALABS/1Tips/#web-cat-style-checker-if-enabled).
 !!!warning 
-    Remember to Check `BrowserView.java` when submitting to webcat
+    Remember to read the instructions in `BrowserView.java`  when submitting to Web-CAT as not doing so would result in an error.
 
 ## Instructions 
 In this lab we will implement a toy browser called `LineCruiser`. Rather than
@@ -70,7 +71,7 @@ This lab introduces you to Stacks which is a data structure that is LIFO (Last I
 
 ![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/Stack.png?raw=true)
 
-This can be useful here as we just need the last Item added to the stack to keep track of the pages you went before
+This can be useful here as we just need the last Item added to the stack to keep track of the pages you went to before
 
 ## BrowserModel
 The class you will be working on.

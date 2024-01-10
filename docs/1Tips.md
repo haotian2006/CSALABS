@@ -1,7 +1,7 @@
 # Some tips that may be helpful
 
-## Web Cat Style Checker (if enabled)
-webcat's style checking can be annoying so here are some tips on what you should do 
+## Web-CAT Style Checker (if enabled)
+webcat's style checking can be annoying so here are some tips on what you can do 
 
 What you can do first is click on the `Full Printable Report` Button
 
@@ -13,180 +13,183 @@ What it does is bring you to a page which shows you all the parts where your sty
 
 This will allow you to see why exactly you are not getting your style points
 
-Here is what you should do an not do
+Here is some style that webcat likes/dislikes
 
 #### Closing brackets
+???+Failure "Wrong"
+    ```java
+    if (condition){
+        
+    }
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/x.png?raw=true" width= 15 height= 15>
-```java
-if (condition){
-    
-}
+    if (condition) // webcat doesn't like this syntax
+        return;
 
-if (condition)
-    return;
+    class myClass
+        {
 
-class myClass{
+    }
+    ```
+    Make sure that you have your starting { be below the Statements and Indented properly 
 
-}
-```
+???+Success "Correct"
+    ```java
+    if (condition)
+    {
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/check.png?raw=true" width= 15 height= 15>
-```java
-if (condition)
-{
+    }
 
-}
+    if (condition)
+    {
+        return;
+    }
 
-if (condition)
-{
-    return;
-}
+    class myClass
+    {
 
-class myClass
-{
+    }
+    ```
 
-}
-```
+#### Spaces between operators and Single lines
 
-#### Spaces between operations and Multiline
+???+Failure "Wrong"
+    ```java
+    int sum=x+x;
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/x.png?raw=true" width= 15 height= 15>
-```java
-int sum=x+x;
+    private Stack<Integer> backStk,forwardStk;
 
-private Stack<Integer> backStk,forwardStk;
-```
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/check.png?raw=true" width= 15 height= 15>
+    System.out.println("Hello");System.out.println("World");
+    ```
 
-```java
-int sum = x + x;
+???+Success "Correct"
+    ```java
+    int sum = x + x;
 
-private Stack<Integer> backStk;
-private Stack<Integer> forwardStk;
-```
+    private Stack<Integer> backStk;
+    private Stack<Integer> forwardStk;
+
+    System.out.println("Hello");
+    System.out.println("World");
+    ```
 
 #### Lines longer then 70 characters
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/x.png?raw=true" width= 15 height= 15>
-```java
-// This is a line that will be more then 70 characters and will cause webcat to mark points off
-```
+???+Failure "Wrong"
+    ```java
+    // This is a line that will be more then 70 characters and will cause webcat to mark points off
+    ```
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/check.png?raw=true" width= 15 height= 15>
-
-```java
-// This is how you can avoid it
-// By using multiple lines
-// this can apply to java doc and code
-```
+???+Success "Correct"
+    ```java
+    // This is how you can avoid it
+    // By using multiple lines
+    // this can apply to java doc and code
+    ```
 
 #### Improper Indenting
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/x.png?raw=true" width= 15 height= 15>
-```java
-if (condition)  
-    {
-System.out.println("Hello World")
-    }
-```
-
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/check.png?raw=true" width= 15 height= 15>
-
-```java
-if (condition)  
-{
+???+Failure "Wrong"
+    ```java
+    if (condition)  
+        {
     System.out.println("Hello World")
-}
-```
+        }
+    ```
+
+???+Success "Correct"
+    ```java
+    if (condition)  
+    {
+        System.out.println("Hello World")
+    }
+    ```
+    you can use an auto formatter to format your code as well
 
 #### Improper Java Docs or missing
 
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/x.png?raw=true" width= 15 height= 15>
-```java
-/**
-*  //description is missing 
-*  @author  //author is not filled out
-*  @version //version is not filled out ...
-*  @author  
-*  @author  
-*
-*  @author  
-*/
-public class test
-{ 
-    private int x;
-
-    //missing java docs
-    public test(int x)
-    {
-        this.x = x;
-    }
-
+???+Failure "Wrong"
+    ```java
     /**
-     * getX is missing a description @return
-     * @return
-     */
-    public int getX()
-    {
-        return x
+    *  //description is missing 
+    *  @author  //author is not filled out
+    *  @version //version is not filled out ...
+    *  @author  
+    *  @author  
+    *
+    *  @author  
+    */
+    public class Integer
+    { 
+        private int x;
+
+        //missing java docs
+        public Integer(int x)
+        {
+            this.x = x;
+        }
+
+        /**
+         * getX is missing a description @return
+         * @return
+         */
+        public int getX()
+        {
+            return x
+        }
+
+        /**
+         * setX is missing @param
+         */
+        public void setX(int x)
+        {
+            this.x = x;
+        }
+
     }
-
-     /**
-     * setX is missing @param
-     */
-    public void setX(int x)
-    {
-        this.x = x;
-    }
-
-}
-```
-<img src="https://github.com/haotian2006/CSALABS/blob/main/Images/index/check.png?raw=true" width= 15 height= 15>
-```java
-/**
-*  Stores a int x for testing
-*  @author  you
-*  @version Jan 1,1970
-*  @author  Period 1
-*  @author  Assignment: JMCH0
-*
-*  @author  Sources: none
-*/
-public class test
-{ 
-    private int x;
-
-    
+    ```
+???+Success "Correct"
+    ```java
     /**
-     * Creates and stores x
-     * @param x The int being stored
-     */
-    public test(int x)
-    {
-        this.x = x;
-    }
+    *  A Integer wrapper class that encapsulates an int value
+    *  @author  you
+    *  @version Jan 1,1970
+    *  @author  Period 1
+    *  @author  Assignment: JMCH0
+    *
+    *  @author  Sources: none
+    */
+    public class Integer
+    { 
+        private int x;
 
-    /**
-     * gets the stored value
-     * @return the stored value
-     */
-    public int getX()
-    {
-        return x
-    }
+        
+        /**
+        * Constructs an Integer object and initializes its value.
+        * @param x The integer value to be stored
+        */
+        public IntegerWrapper(int x) {
+            this.x = x;
+        }
 
-     /**
-     * setX is missing @param
-     * @param x Value being stored
-     */
-    public void setX(int x)
-    {
-        this.x = x;
-    }
+        /**
+        * Retrieves the stored integer value.
+        * @return The stored integer value
+        */
+        public int getValue() {
+            return x;
+        }
 
-}
-```
+        /**
+        * Updates the stored integer value.
+        * @param x The new integer value to be stored
+        */
+        public void setValue(int x) {
+            this.x = x;
+        }
+
+    }
+    ```
+    Remember to make sure that your java docs don't pass 70 characters and if it does you can move some to the next line
 
 There is more checks that webcat does but these are the most basic ones
 
