@@ -1,7 +1,11 @@
 # 21 Lab: Browsing
 
 >Difficulty: <span style="color:lightgreen">simple</span> (15 Minuets)
-
+!!!warning
+    This lab takes off points determining on your formatting. Make sure you have Java Doc comments and make sure your style follows what webcat wants.
+    You can find out how to style properly [here](https://haotian2006.github.io/CSALABS/1Tips/#web-cat-style-checker-if-enabled)
+!!!warning 
+    Remember to Check `BrowserView.java` when submitting to webcat
 
 ## Instructions 
 In this lab we will implement a toy browser called `LineCruiser`. Rather than
@@ -68,5 +72,47 @@ This lab introduces you to Stacks which is a data structure that is LIFO (Last I
 
 This can be useful here as we just need the last Item added to the stack to keep track of the pages you went before
 
-!!!warning
-    This lab takes off points determining on your formatting. Make sure you have Java Doc comments and your style follows the web cat checker. 
+## BrowserModel
+The class you will be working on.
+
+### **---Fields---**
+>By default, consider all fields private unless specified otherwise
+### view `BrowserView`
+
+Hold the BrowserView
+!!!info 
+    To update a BrowserView's page you need to use the method `BrowserView.update(page)`
+
+### backStk `Stack<Integer>`
+Holds the Stack for pages that you've been to
+
+### forwardStk `Stack<Integer>`
+Holds the Stack for pages to go after you go bacK
+
+### topLine `int`
+The current page you will be on
+
+
+### **---Methods/Functions---**
+>By default, consider all Methods public unless specified otherwise
+### BrowserModel(`BrowserView view`) : `constructor`
+Initialize all the fields 
+
+### Home : `void`
+Clears the stacks and goes to the home page (0)
+
+### back : `void`
+Updates `view` to the previous line from the back stack 
+!!!info
+    remember to update `forwardStk` and `topLine`.
+    Also remember to check if `backStk` is empty
+
+### forward : `void`
+Similar to `back()` but moves forward instead.
+
+### followLink(`int n`) : `void`
+
+![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/link.png?raw=true)
+
+
+

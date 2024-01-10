@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
         "Keybinds",
+        "println",
         "webcat",
         "webcat's"
-    ]
+    ],
+    "docwriter.style": "Javadoc"
 }
