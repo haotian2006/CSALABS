@@ -4,7 +4,7 @@
 
 
 !!!warning
-    This lab deducts points based on formatting criteria. Ensure that your code includes JavaDoc comments and adheres to the formatting guidelines specified by Web-CAT. For detailed instructions on proper styling, refer to [ this resource](https://haotian2006.github.io/CSALABS/1Tips/#web-cat-style-checker-if-enabled).
+    This lab deducts points based on a formatting criteria. Ensure that your code includes JavaDoc comments and adheres to the formatting guidelines specified by Web-CAT. For detailed instructions on proper styling, refer to [ this resource](https://haotian2006.github.io/CSALABS/1Tips/#web-cat-style-checker-if-enabled).
 !!!warning 
     Remember to read the instructions in `BrowserView.java`  when submitting to Web-CAT as not doing so would result in an error.
 
@@ -15,6 +15,9 @@ Figure 21-5 shows the classes that we have to write for this project. As usual, 
 a team effort: I’ll provide the `LineCruiser`, `BrowserMouseListener`,
 `BrowserControlPanel`, and BrowserView classes, and you work on the
 `BrowserModel` class.
+
+!!!warning 
+    parts of the original Instructions were truncated, Make sure to check the original pdf for the full instructions (If you want)
 
 Our browser has “Home,” “Back,” and “Forward” buttons, just like a real browser.
 An important part of your task is to figure out how exactly these buttons work in a
@@ -61,7 +64,8 @@ boolean hasBack();
 boolean hasForward();
 ```
 
-The return true means enable; false, disable.
+The return `true` means enable; `false`, disable.
+
 You’ll find the LineCruiser files in `JM\Ch21\Browser`. The `lines.html data` file
 for testing our browser is in the same folder. Use `java.util.Stack<Integer>`
 for the stacks. Write the BrowserModel class and test the program thoroughly. 
@@ -116,9 +120,9 @@ Is called when the Blue text is clicked.
 
 ![Alt text](https://github.com/haotian2006/CSALABS/blob/main/Images/Browsing/link.png?raw=true)
 
-`n` will be the blue line that is clicked and you will make it go to n-th line.
+`n` will be the blue line that is clicked and you will make `view` display the n-th line.
 !!!info
-    remember to store the current line in backStk
+    remember to store the current line in `backStk` and update `view`
 
 ### hasBack: `boolean`
 if there is values in `backStk`
