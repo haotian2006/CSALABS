@@ -121,7 +121,7 @@ that concatenates `list2` to `list1` in O(1) time.
 13. Implement Selection Sort for a linked list with a tail. (Assume that the list
 holds `Comparable` objects.) You method should run in O(n^2^) time, where `n`
 is the number of nodes in the list.
-
+ 
 14. Write the following method:
 ```java
 // Removes the largest element from the list and returns
