@@ -1,4 +1,4 @@
-# 21 Lab: Browsing
+# 21.0 Lab: Browsing
 
 >Difficulty: <span style="color:lightgreen">simple</span> (15 Minuets)
 
