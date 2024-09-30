@@ -1,0 +1,839 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../20%20Exercise/">
+      
+      
+        <link rel="next" href="../21%20Browsing/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>20.7 Lab: Teletext - CSA LABS Second Semester</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#207-lab-teletext" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CSA LABS Second Semester" class="md-header__button md-logo" aria-label="CSA LABS Second Semester" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CSA LABS Second Semester
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              20.7 Lab: Teletext
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CSA LABS Second Semester" class="md-nav__button md-logo" aria-label="CSA LABS Second Semester" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CSA LABS Second Semester
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1Tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Some tips that may be helpful
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20%20Exercise/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20.0 Exercises: 1-10,13,14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    20.7 Lab: Teletext
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    20.7 Lab: Teletext
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teletextlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      TeletextList
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TeletextList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-fields-" class="md-nav__link">
+    <span class="md-ellipsis">
+      ---Fields---
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heading-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      heading ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topnode-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      topNode ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-methodsfunctions-" class="md-nav__link">
+    <span class="md-ellipsis">
+      ---Methods/Functions---
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teletextliststring-headlines-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      TeletextList(String[] headlines) : constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertstring-msg-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      insert(String msg) : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      delete() : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollup-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      scrollUp() : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addbeforelistnode2-node-string-msg-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      addBefore(ListNode2 node, String msg ) : ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addafterlistnode2-node-string-msg-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAfter(ListNode2 node, String msg ) : ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelistnode2-node-string-msg-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      remove(ListNode2 node, String msg) : void
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21%20Browsing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21.0 Lab: Browsing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31.3%20RPN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    31.3 RPN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9999FeedBack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suggestions/Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teletextlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      TeletextList
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TeletextList">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-fields-" class="md-nav__link">
+    <span class="md-ellipsis">
+      ---Fields---
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heading-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      heading ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#topnode-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      topNode ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-methodsfunctions-" class="md-nav__link">
+    <span class="md-ellipsis">
+      ---Methods/Functions---
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teletextliststring-headlines-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      TeletextList(String[] headlines) : constructor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertstring-msg-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      insert(String msg) : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      delete() : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrollup-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      scrollUp() : void
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addbeforelistnode2-node-string-msg-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      addBefore(ListNode2 node, String msg ) : ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addafterlistnode2-node-string-msg-listnode2string" class="md-nav__link">
+    <span class="md-ellipsis">
+      addAfter(ListNode2 node, String msg ) : ListNode2&lt;String&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removelistnode2-node-string-msg-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      remove(ListNode2 node, String msg) : void
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="207-lab-teletext">20.7 Lab: Teletext</h1>
+<blockquote>
+<p>Difficulty: <span style="color:orange">Complicated</span> (30 Minutes)</p>
+</blockquote>
+<h2 id="instructions">Instructions</h2>
+<p>Figure 20-12 shows a snapshot from the Teletext program. The program
+continuously scrolls up a list of headlines. The user can add a headline, by typing it
+in the provided text input field. The line will be added after the blank line that
+follows “Today’s headlines.” The user can also delete a headline by entering “d.”
+The next headline after the top one will be deleted. Run <code>Teletext</code> by clicking on the
+<code>Teletext.jar</code> file in <code>JM\Ch20\Teletext</code>. </p>
+<p><a class="glightbox" href="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig1.png?raw=true" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cleanWorkspace.pdf" src="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig1.png?raw=true" /></a></p>
+<p>Figure 20-13 shows the class diagram for the Teletext program. The program keeps
+the headlines in a doubly-linked circular list. (Circular lists are not used very often;
+this is a rare occasion where we can benefit from one.) The list is implemented in the
+<code>TeletextList</code> class. Your task is to fill in the missing code in that class.
+<code>TeletextList.java</code> is located in <code>JM\Ch20\Teletext</code>. </p>
+<p><a class="glightbox" href="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig2.png?raw=true" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="cleanWorkspace.pdf" src="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig2.png?raw=true" /></a></p>
+<h2 id="overview">Overview</h2>
+<p>This lab isn't too hard as its just a simple Circular Doubly Linked List but the wording can be a bit hard to understand at first.</p>
+<h2 id="teletextlist">TeletextList</h2>
+<p>This is the file which you will be modifying your code in.</p>
+<h3 id="-fields-">---Fields---</h3>
+<h3 id="heading-listnode2string"><strong>heading</strong> <code>ListNode2&lt;String&gt;</code></h3>
+<p>This will store the ListNode2 that has the value "Today's headlines"</p>
+<h3 id="topnode-listnode2string"><strong>topNode</strong> <code>ListNode2&lt;String&gt;</code></h3>
+<p>This will hold the current ListNode2 that is being displayed </p>
+<h3 id="-methodsfunctions-">---Methods/Functions---</h3>
+<h3 id="teletextliststring-headlines-constructor"><strong>TeletextList</strong>(<code>String[] headlines</code>) : <code>constructor</code></h3>
+<p>This constructor will init the LinkList, First create a <code>ListNode2</code> and store the value <code>"Today's headlines"</code>. Then store the reference in the <code>heading</code> field. 
+Create two <code>ListNode2</code> and store the value <code>""</code> in them. Then set the prev of <code>heading</code> to one of the Nodes and the next of <code>heading</code> to another. 
+This will create this section of the blog</p>
+<p><a class="glightbox" href="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig3.png?raw=true" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fig3" src="https://github.com/haotian2006/CSALABS/blob/main/Images/teletext/Fig3.png?raw=true" /></a></p>
+<p>After doing that iterate through <code>headlines</code> which is an string array and insert each string into the Circular Doubly Linked List, </p>
+<div class="admonition reminder">
+<p class="admonition-title">Reminder</p>
+<p>make sure you remember to set the next and prev for both Empty ListNode2 and for each of the headlines in the string array so it creates an Circular Doubly Linked List</p>
+</div>
+<p>Lastly set <code>topNode</code> to <code>heading</code></p>
+<h3 id="insertstring-msg-void"><strong>insert</strong>(<code>String msg</code>) : <code>void</code></h3>
+<p>This method inserts a new <code>ListNode2</code> with the msg after the <code>"" ListNode2</code> of the <code>heading ListNode2</code></p>
+<p>You would start by first finding the <code>"" ListNode2</code> by starting with <code>heading</code> and use <code>.getNext()</code> to get the <code>"" ListNode2</code>
+Once you have that <code>ListNode2</code> you would create a new <code>ListNode2</code> with the value of msg and set the prev to the <code>"" ListNode2</code>
+and set next to the next <code>ListNode2</code> of the <code>"" ListNode2</code>. After you do that you want to update the next value for <code>"" ListNode2</code> and the prev value for <code>("" ListNode2).getNext()</code></p>
+<h3 id="delete-void"><strong>delete</strong>() : <code>void</code></h3>
+<p>deletes the next Node after <code>topNode</code> unless the next Node is the <code>heading</code> or one of the <code>"" ListNode2</code> </p>
+<p>Get the nextNode after topNode and do an if check to see if its either the <code>ListNode2</code> before/after <code>heading</code> or if is <code>heading</code>. If any of these conditions pass then don't delete the nextNode and do nothing. If it does pass then remove the <code>ListNode2</code> by settings the prevNode's next to nextNode and nextNode's prev to prevNode</p>
+<h3 id="scrollup-void"><strong>scrollUp</strong>() : <code>void</code></h3>
+<p>sets topNode to the nextNode</p>
+<h3 id="addbeforelistnode2-node-string-msg-listnode2string"><strong>addBefore</strong>(ListNode2<String> node, String msg ) : <code>ListNode2&lt;String&gt;</code></h3>
+<p>this method is already done for you </p>
+<h3 id="addafterlistnode2-node-string-msg-listnode2string"><strong>addAfter</strong>(ListNode2<String> node, String msg ) : <code>ListNode2&lt;String&gt;</code></h3>
+<p>similar to addBefore but instead of before you do after</p>
+<p>Look at addBefore's code</p>
+<h3 id="removelistnode2-node-string-msg-void"><strong>remove</strong>(ListNode2<String> node, String msg) : <code>void</code></h3>
+<p>similar to delete but delete the given node instead</p>
+<p>explained in delete</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
